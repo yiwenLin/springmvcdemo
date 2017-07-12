@@ -19,7 +19,7 @@ public class MainController {
 
     // 自动装配数据库接口，不需要再写原始的Connection来操作数据库
     @Autowired
-     UserRepository userRepository;
+    UserRepository userRepository;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
@@ -38,3 +38,4 @@ public class MainController {
         return "admin/users";
     }
 }
+
